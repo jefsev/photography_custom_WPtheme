@@ -1,7 +1,7 @@
 body {
   background-color: #1b1b1e;
   overflow-x: hidden;
-
+  font-family: 'Dosis', sans-serif;
 }
 
 
@@ -29,8 +29,22 @@ body {
 
 /*/////// Style all gallery's ///////////*/
 
+.gallery-title {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 65px;
+  border-bottom: 1.5px solid rgba(178, 71, 8, 0.6);
+  text-align: center;
+}
+
+h1 {
+  color: rgba(178, 71, 8, 1);
+}
+
 #gallery {
-  padding: 85px 35px;
+  padding: 65px 35px;
+  margin: 0 0 0 200px;
 }
 
 .masonry {
@@ -38,8 +52,8 @@ body {
           column-count: 5;
   -webkit-column-gap: 1.5em;
           column-gap: 1.5em;
-  margin: 0 0 0 200px;
-  padding: 0 20px;
+
+  padding: 0 0 80px 20px;
 
 }
 
@@ -53,6 +67,45 @@ body {
 
 a:focus {
   outline: none !important;
+}
+
+/*//////// Pagination styles //////*/
+
+.paginate-links-wrapper {
+  width: 40%;
+  height: 100px;
+  margin: auto;
+  border-top: 1.5px solid rgba(178, 71, 8, 0.6);
+}
+
+.paginate-links {
+  padding-top: 30px;
+  width: 100%;
+  font-size: 1.3em;
+  color: rgba(178, 71, 8, 1);
+  text-align: center;
+}
+
+.paginate-links a {
+  text-decoration: none;
+  color: #ededed;
+  padding: 0 4px;
+}
+
+.paginate-links i {
+  color: #ededed;
+}
+
+.paginate-links i:hover {
+  color: rgba(178, 71, 8, 1);
+}
+
+.fa-arrow-circle-right {
+  padding-left: 15px;
+}
+
+.fa-arrow-circle-left {
+  padding-right: 15px;
 }
 
 /*/////// Menu + Logo ////////*/
@@ -73,7 +126,6 @@ a:focus {
   position: fixed;
   width: 220px;
   height: 100%;
-  font-family: 'Dosis', sans-serif;
 }
 
 #menu a {
@@ -234,7 +286,7 @@ li {
 
 /*///// tablets portrait, mobile and landscape mobile //////*/
 
-@media screen and (max-device-width: 770px)  {
+@media screen and (max-device-width: 800px)  {
 
 
         body {
@@ -261,6 +313,10 @@ li {
           position: sticky;
           z-index: 1;
 
+        }
+
+        .paginate-links {
+          font-size: 2em;
         }
 
         #social-btn {
@@ -360,7 +416,7 @@ li {
 
 /*///// tablets landscape small screens. //////*/
 
-@media screen and (min-device-width: 785px) and (max-device-width: 1200px) {
+@media screen and (min-device-width: 800px) and (max-device-width: 1200px) {
 
         body {
           padding: 0;
