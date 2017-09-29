@@ -4,7 +4,7 @@ Custom made WP-theme for a photography client.
 
 # Wish of the client
 
-Client wanted to have a personal website to upload photo into different categories.
+Client wanted to have a personal website to upload photos into different categories.
 Wordpress was the best choice, so she could upload and remove photos her self.
 
 # What i learned and where to improve.
