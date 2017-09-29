@@ -3,6 +3,7 @@
 }
 add_action( 'init' , 'add_categories_for_attachments' );
 
+
 function theme_styles() {
   global $wp_styles;
     wp_enqueue_style( 'jquery_mobile','http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css' );
